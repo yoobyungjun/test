@@ -1,17 +1,17 @@
 # Starter pipeline
-- task: InstallFortifySCA@7
-  inputs:
-    InstallerPath: 'C:\scmwork\Fortify_SCA_and_Apps_21.2.3_windows_x64.exe'
-    VS2015: false
-    LicenseFile: 'C:\scmwork\fortify.license'
-    RunFortifyRulepackUpdate: false
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
 trigger:
 - main
-
+- task: InstallFortifySCA@7
+  inputs:
+    InstallerPath: 'C:\scmwork\Fortify_SCA_and_Apps_21.2.3_windows_x64.exe'
+    VS2015: false
+    LicenseFile: 'C:\scmwork\fortify.license'
+    RunFortifyRulepackUpdate: false
 pool:
   vmImage: ubuntu-latest
 
