@@ -24,3 +24,17 @@ steps:
     VS2015: false
     LicenseFile: 'C:\scmwork\fortify.license'
     RunFortifyRulepackUpdate: false
+
+- task: FortifySCA@7
+  inputs:
+    licenseFile: 'C:\scmwork\fortify.license'
+    runBuildTranslate: true
+    applicationType: 'java'
+    buildSourcePath: '.'
+    fortifyBuildId: 'test'
+    runFortifyRulepackUpdate: false
+    runFortifyClean: true
+    scaVerbose: false
+    scaDebug: false
+    runFortifyScan: true
+    fortifyScanType: 'Localscan'
