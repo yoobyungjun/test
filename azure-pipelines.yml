@@ -37,4 +37,4 @@ steps:
     scaDebug: false
     runFortifyScan: true
     fortifyScanType: 'LocalScan'
-    additionalScanParams: '-f c:\test.fpr'
+    additionalScanParams: ''
