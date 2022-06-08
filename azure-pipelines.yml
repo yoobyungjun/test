@@ -30,11 +30,11 @@ steps:
     licenseFile: 'C:\scmwork\fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
-    buildSourcePath: '.'
     fortifyBuildId: 'test'
     runFortifyRulepackUpdate: false
     runFortifyClean: true
     scaVerbose: false
     scaDebug: false
     runFortifyScan: true
-    fortifyScanType: 'Localscan'
+    fortifyScanType: 'LocalScan'
+    additionalScanParams: '-f c:\test.fpr'
