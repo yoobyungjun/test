@@ -7,7 +7,7 @@
 trigger:
 - main
 
-pool: MyPool
+pool: Default
 
 steps:
 - script: echo Hello, world!
