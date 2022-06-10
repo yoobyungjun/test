@@ -34,8 +34,8 @@ steps:
     fortifyBuildId: 'workbench'
     runFortifyRulepackUpdate: false
     runFortifyClean: true
-    scaVerbose: false
-    scaDebug: false
+    scaVerbose: true
+    scaDebug: true
     runFortifyScan: true
     fortifyScanType: 'LocalScan'
     additionalScanParams: '-Xmx14000M'
