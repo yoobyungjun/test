@@ -39,18 +39,3 @@ steps:
     runFortifyScan: true
     fortifyScanType: 'LocalScan'
     additionalScanParams: '-Xmx14000M'
-- task: FortifySCA@7
-  inputs:
-    licenseFile: '/agent/fortify/fortify.license'
-    runBuildTranslate: true
-    applicationType: 'java'
-    buildSourcePath: './'
-    buildToolOptions: '-Xmx14000M'
-    fortifyBuildId: 'workbench'
-    runFortifyRulepackUpdate: false
-    runFortifyClean: true
-    scaVerbose: false
-    scaDebug: false
-    runFortifyScan: true
-    fortifyScanType: 'LocalScan'
-    additionalScanParams: '-Xmx14000M'
