@@ -18,23 +18,3 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: InstallFortifySCA@7
-  inputs:
-    InstallerPath: 'C:\scmwork\Fortify_SCA_and_Apps_20.1.0_windows_x64.exe'
-    VS2015: false
-    LicenseFile: 'C:\scmwork\fortify.license'
-    RunFortifyRulepackUpdate: false
-
-- task: FortifySCA@7
-  inputs:
-    licenseFile: 'C:\scmwork\fortify.license'
-    runBuildTranslate: true
-    applicationType: 'java'
-    fortifyBuildId: 'test'
-    runFortifyRulepackUpdate: false
-    runFortifyClean: true
-    scaVerbose: false
-    scaDebug: false
-    runFortifyScan: true
-    fortifyScanType: 'LocalScan'
-    additionalScanParams: ''
