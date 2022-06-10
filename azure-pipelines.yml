@@ -18,3 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: InstallFortifySCA@7
+  inputs:
+    InstallerPath: '/agent/fortify/Fortify_SCA_and_Apps_21.2.0_linux_x64.run'
+    VS2015: false
+    LicenseFile: '/agent/fortify/fortify.license'
+    RunFortifyRulepackUpdate: false
