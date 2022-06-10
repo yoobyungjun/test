@@ -29,8 +29,7 @@ steps:
     licenseFile: '/agent/fortify/fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
-    buildToolOptions: '-Xmx14000M'
-    fortifySourceTranslate: '/agent/_work/1/s'
+    buildToolOptions: '-Xmx14000M /agent/_work/1/s'
     fortifyBuildId: 'workbench'
     runFortifyRulepackUpdate: false
     runFortifyClean: true
