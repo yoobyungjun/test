@@ -24,7 +24,21 @@ steps:
     VS2015: false
     LicenseFile: '/agent/fortify/fortify.license'
     RunFortifyRulepackUpdate: false
-
+- task: FortifySCA@7
+  inputs:
+    licenseFile: '/agent/fortify/fortify.license'
+    runBuildTranslate: true
+    applicationType: 'java'
+    buildToolOptions: '-Xmx14000M'
+    fortifySourceTranslate: '/agent/_work/1/s'
+    fortifyBuildId: 'workbench'
+    runFortifyRulepackUpdate: false
+    runFortifyClean: true
+    scaVerbose: false
+    scaDebug: false
+    runFortifyScan: true
+    fortifyScanType: 'LocalScan'
+    additionalScanParams: '-Xmx14000M'
 - task: FortifySCA@7
   inputs:
     licenseFile: '/agent/fortify/fortify.license'
