@@ -42,7 +42,6 @@ steps:
   inputs:
     script: |
       echo Write your commands here
-      
+      /agent/_work/1/a/sca_artifacts/test.sh
       echo Hello world
-    workingDirectory: '/agent/_work/1/a/sca_artifacts/test.sh'
     failOnStderr: true
