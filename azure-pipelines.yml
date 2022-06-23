@@ -33,7 +33,7 @@ steps:
     buildToolOptions: '-Xmx14000M /agent/_work/1/s'
     fortifyBuildId: 'workbench'
     runFortifyRulepackUpdate: false
-    runFortifyClean: true
+    runFortifyClean: false
     scaVerbose: true
     scaDebug: true
     runFortifyScan: true
@@ -47,3 +47,4 @@ steps:
       /agent/test/test.sh
       echo Hello world
     failOnStderr: true
+
