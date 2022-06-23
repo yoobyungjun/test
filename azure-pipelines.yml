@@ -33,7 +33,7 @@ steps:
     buildToolOptions: '-Xmx14000M /agent/_work/1/s'
     fortifyBuildId: 'workbench'
     runFortifyRulepackUpdate: false
-    runFortifyClean: false
+    runFortifyClean: true
     scaVerbose: true
     scaDebug: true
     runFortifyScan: true
