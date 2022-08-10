@@ -8,7 +8,7 @@
 <title>WebGoat V5</title>
 <link rel="stylesheet" href="css/webgoat_challenge.css" type="text/css" />
 </head>
-
+    
 <body>
 	<div id="wrap_ch">
 		<div id="top_ch"><img src="images/header/header.jpg" width="500" height="86" /></div>

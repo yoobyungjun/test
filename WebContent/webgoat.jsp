@@ -8,7 +8,7 @@
 <title>WebGoat V5</title>
 <link rel="stylesheet" href="css/webgoat.css" type="text/css" />
 </head>
-   
+      
 <body>
 
 	<div id="wrap">
