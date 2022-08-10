@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=ISO-8859-1" language="java" 
 	import="org.owasp.webgoat.session.*, org.owasp.webgoat.lessons.Category, org.owasp.webgoat.lessons.AbstractLesson, java.util.*" 
 	errorPage=""  %>
-<%
+<%   
 Course course = ((Course)session.getAttribute("course"));
 WebSession webSession = ((WebSession)session.getAttribute("websession"));
 AbstractLesson currentLesson = webSession.getCurrentLesson();
