@@ -12,7 +12,7 @@ WebSession webSession = ((WebSession)session.getAttribute("websession"));
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Untitled Document</title>
 <link href="css/webgoat.css" rel="stylesheet" type="text/css" />
-</head>
+</head>  
 <body>
 	<div id=#wrap>
 	<%
